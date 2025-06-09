@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the learning platform */
+.prose {
+  @apply text-foreground;
+  max-width: 100%;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  @apply font-semibold text-foreground mt-6 mb-4;
+}
+
+.prose h1 {
+  @apply text-2xl;
+}
+
+.prose h2 {
+  @apply text-xl;
+}
+
+.prose h3 {
+  @apply text-lg;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose pre {
+  @apply bg-default-100 p-4 rounded-md overflow-x-auto mb-4;
+}
+
+.prose code {
+  @apply bg-default-100 px-1 py-0.5 rounded text-sm;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose a {
+  @apply text-primary hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-default-300 pl-4 italic;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-default-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-default-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-default-400;
+}
